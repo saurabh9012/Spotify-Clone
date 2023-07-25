@@ -1,0 +1,165 @@
+/* Humne body humne color deya hai esme pure webpage ki background color change hojayega.*/
+body{
+    background-color: antiquewhite;
+}
+/* Ab hum kya krege css ko reset krege * ye lga kr ese kya hoga ese hum body mein jo bhi dege wo pure
+webpage mein follow hoga. */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+/* NavBar ki leye Style krege yha se. */
+/* Ab hum navbar ki leye style krege neche dekhe. */
+nav{
+    /* Hum phle font dege navbar ko to uske leye google font ka use krege. */
+    font-family: 'Roboto', sans-serif; /*font ka use kra hai.*/
+    height: 55px;  /*Humne navbar ko height de hai.*/
+    background-color: black; /*Or fr uske color deya hai black*/
+}
+/* Ab hum kya krege jo humare nav ki under ul hai uske leye work krege. */
+nav ul{
+    display: flex; /*Eska use krne se humare saare wo ek line mein aagye phle neche ko aarhe the.*/
+
+    color: white;  /*Jo humare home or about etc lekhe aarhe hai unko color deya hai.*/
+    align-items: center; /*Ese kya hoga jo uper neche ho rhe the lekhe hue home about etc or logo bhi wo center hogye.
+                            but fr bhi humare jo spotify lekha hua hai wo nhi hua center mein baaki sb hogye to uske 
+                            leye hum ab logo ki jo class hai usse mein lekha hua hai spotify bhi html file mein
+                            to usko hi direct select kr ki style krege neche dekhe. */
+    /* list-style: none; */  /*Hum yha bhi de sekte hai jaise de hai list style none but hum agar usse
+    list ko mtlb li ko select kr ki de jaise neche de hai to vaise bhi de sekte hai choice hai.
+    Bs difference itna hai ki ul ki under sbhi ki list style change hojayege, or direct li ko dene se
+    jaise neche de hai usse only li ki hue hai change.*/
+
+    
+}
+/* Ab hum kya krege nav ki under jo ul hai uske jo list hai li tag se uske leye krege neche dekhe. */
+nav ul li{
+    list-style: none; /*Ese kya hota hai jo humare . dot aarhe the home or about etc ki aage wo nhi aayege ab*/
+    padding: 0 12px;/* padding dege ese kya hoga jo humare home about etc hai unke beach mein space aaye. 0 ka mtlb ki 
+                    top or bottom mein nhi de rhe hai only left or right mein de rhe hai 12px bs.*/
+}
+/* Ab hum jo humare navbar ki ul ki under jo logo hai usko thek krege to uske leye hum direct uske class ko hi select kr lege. */
+.brand img{  /*Humne direct image jo logo hai uske class ko hi select kr leya or uske img tag ko le leya.*/
+    width: 55px;
+    padding: 0 6px;
+}
+/*Hum esliye display flax or aign item center kra hai kyu ki jo humne uper ul mein align item center kra tha usse baaki
+sb to center hogye the but jo spotify lekha hua hai wo nhi hua tha to ab brand class mein wo lekha hua tha to direct 
+esko hi select kr ki kr leya AB sb thek hogya.*/
+/* ye mostly hum spotify jo lekha hua hai uske leye kr rhe hai kyu ki wo brand name ki class ki under hi lekha hai. */
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold; /*Ese humare spotify thoda bold dekhege home or about se.*/
+    font-size:x-large; /*Ese spotify ka size increase hoga.*/
+
+}
+
+
+
+
+
+/* Ab hum container ki leye work krege or uske under jo bhi div hai unko bhi style krege.Neche dekhe. */
+.container{
+    min-height: 65vh; /* Ye hum container ki height ko manage kr rhe hai. */
+    background-color: black; /*Container ko background color deya hai.*/
+    font-family: 'Varela Round', sans-serif;
+    color: white; /*Eske under jo bhi lekhuga usse white mein aayega wo lekha hua.*/
+    display: flex;
+    margin: 20px auto; 
+    width: 65%;
+    border-radius: 12px;
+    background-image: url(./image/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* container ki under jo humara div hai songList name se uske leye style krege neche dekhe. */
+.songList{
+    margin: 12px /*Eske krne se jo humare h1 mein lekha hua tha or baaki uske neche song ki jo details hai thoda corner
+    se under ko aayege vrna bilkul corner pr hi touch the.*/
+}
+/* Ab hum kya krege container ki under jo div hai songList vaala uske under ek or div bna hai songItemContainer us div ki 
+under ek or div bna hai songItem name se uske leye Style krege neche dekhe kaise.*/
+.songItem{
+    height: 35px; /*Eske krne se humne jo song item ki details ka hai uske height set ki hai.*/
+    display: flex;
+    background-color: white; /*jo wo hai song item ki details ka usko background color mela.*/
+    /* width: 70%; */
+    color: black; /*Uske under jo lekha aayega time or name song ka wo black mein aayega.*/
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+/* Ab hum kya krege jo humare image hai songItem vaale div ki under uske leye work krege neche dekhe. */
+.songItem img{
+    /* jo humare song ki image hogi usko style kra hai. */
+    width: 30px;
+    margin: 0 13px;
+    border-radius: 15px;
+}
+/* Humare container ki under ek songItem name ka div hai uske under hum span use kr rhe hai uske under ek class hai
+timestamp name ki uske leye style krege neche dekhe. */
+.timestamp{
+    margin: 0 10px; /*Eske krne se kya hua hai jo humare only time song ka or jo wo icon hai play ka usko margin mela hai*/
+}
+.timestamp i{
+    cursor: pointer; /*Eske krne se humare jo song ka jo play button hai only usko cursor pointer deya hai.*/
+}
+
+
+
+
+/* Ab hum bottom ki leye style krege neche dekhe. */
+.bottom{
+    position: sticky; /*Ese kya hoga jo humara bottom rhega wo ek jgha fix rhega uper neche nhi hoga chahe pura webpage ho.*/
+    height: 120px; /*Humne esko height de hai ese wo thoda bada hogya hai.*/
+    background-color: black; /*background color deya hai usko.*/
+    color: white; /*Ese humare icon ko white color melega vaise ab jo bhi lekhege es pr wo white hi aayega eske vjha se*/
+    bottom: 0;/* Ab ese jo hai humare neche aayega bottom mein vrna uper tha navbar ki paas.
+            But aisa krne se nhi aaya hai to ab hum kya krege uper jaayege or container ko select kr ki usko minimum height
+            jo hai neche tk hai bilkul bottom tk to wo or kisi ko neche nhi aane dega to usko set krege uper fr hojayega 
+            ye neche.*/
+    display: flex;
+    justify-content: center; /*Eske krne se humare wo left mein ho rha tha ab wo center mein rhega.*/
+    align-items: center;
+    flex-direction: column; /*Humne display flex ki hue hai to uske leye flex ko direction de hai ese humare icon neche 
+    aajayege vrna us line ki saamne aarhe the.*/
+}
+/* Ab humara jo progessBar hai jo blue color ka jise ye pta chlta hai ki kitna song chla etc to usko style krege. */
+#myProgessBar{
+    width: 80vw;
+    text-align: center; /* Ab humne yha text align center kra tha jise wo jo hai humare center mein aajaye but nhi kra 
+    work esne wo esliye kyu ki ye humara container mein nhi hai bottom agar hota to ye text-align:center work kr jaata 
+    to eske leye ab hum kya krege uper bottom ko hi flex box bnayege or usko hi text-align:center dege. */
+    cursor: pointer;
+}
+/* Hum yha pr ab jo humare icons hai unki size bada krege neche dekhe kaise. */
+.icons{
+    font-size: 36px;
+    margin-top: 15px;
+    
+}
+/* Ab hum kya chahte hai jo humare icon hai us pr jaise hi hum cursor lekr jaaye to wo point kre usko to uske leye hum
+icons ki under i tag ko style krege neche dekhe kaise. */
+.icons i{
+    cursor: pointer;
+}
+/* Jo Bottom class name ka div hai uske under ek or div hai songInfo name se uske leye style krege neche dekhe. */
+.songInfo{
+    position: absolute;
+    left: 10vw;
+}
+.songInfo img{
+    width: 60px;
+    opacity: 0; /*ye esliye use kra hai ese kya hoga jo wo humara icon regular chal rha tha wo ab nhi chlega.*/
+    transition: opacity 0.4s ease-in; /*ese ye ki jo humara icon hai wo kis speed se chelega.*/
+    /*/or en dono ko fr hum js file se link kr dege taaki job song chle tbhi chle or jb song band hojaye to ye bhi
+    band hojaye.*/
+}

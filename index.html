@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Your favourite music is here.</title>
+    <!-- Css ko link kr rhe hai yha pr.Neche dekhe kaise. -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font style ko add krne ki leye css mein to uske leye yha pr link de rhe hai neche dekhe. -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <!-- Ab hum fontAwesome ka link lgayege yha pr jo hum w3school se mel gya tha. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Ab sbse phle hume ek navigation bar chaye to uske leye work krege neche dekhe. -->
+    <nav>
+        <!-- Ab eske under ek ul lgayege unorder list mtlb. -->
+        <ul>
+            <!-- Ab hum list bnayege ul ki under li se bnate hai list. -->
+
+            <!-- Hume ek logo lgana hoga esme to uske leye krege neche dekhe. -->
+            <li class="brand"><img src="image/logo.png" alt="">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Ab hum ek container bnayege wo esliye ki jo humare songs etc ho wo humare ek container ki under ho to esliye. -->
+    <div class="container">
+        
+        <!-- Ab hum ek div bnayege jisme hum song list ko display krayege. To us div ko hum class dege songslist.-->
+        <div class="songList">
+            <!-- Ek heading dege uske under lekhege kuch. -->
+            <h3>Best of NCS - No Copyright Sounds</h3>
+            <!-- yha bhi ek div ka use krege neche dekhe kaise. -->
+            <div class="songItemContainer">
+                <!-- Fr se ek div bna rhe hai jiske class hai songItem. -->
+                <div class="songItem">
+                    <!-- Ab hum ek image use kr rhe hai.jo ki song ki cover image hoge. -->
+                    <img src="image/cover/cover1.jpg" alt="">
+                    <!-- Ab ek span lga rhe hai jisme song ka name hoga or baaki cheje bhi like time. -->
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="0"class="fa songItemPlay fa-play-circle-o"></i></span></span>
+                </div>
+
+                <!-- AB hum jya krege ye jo songItem hai enko same bahut saare bna lege neche dekhe kaise. -->
+
+                <div class="songItem">
+                    <!-- Ab hum ek image use kr rhe hai.jo ki song ki cover image hoge. -->
+                    <img src="image/cover/cover1.jpg" alt="">
+                    <!-- Ab ek span lga rhe hai jisme song ka name hoga or baaki cheje bhi like time. -->
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="1"class="fa songItemPlay fa-play-circle-o"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <!-- Ab hum ek image use kr rhe hai.jo ki song ki cover image hoge. -->
+                    <img src="image/cover/cover1.jpg" alt="">
+                    <!-- Ab ek span lga rhe hai jisme song ka name hoga or baaki cheje bhi like time. -->
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="2"class="fa songItemPlay fa-play-circle-o"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <!-- Ab hum ek image use kr rhe hai.jo ki song ki cover image hoge. -->
+                    <img src="image/cover/cover1.jpg" alt="">
+                    <!-- Ab ek span lga rhe hai jisme song ka name hoga or baaki cheje bhi like time. -->
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="3"class="fa songItemPlay fa-play-circle-o"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <!-- Ab hum ek image use kr rhe hai.jo ki song ki cover image hoge. -->
+                    <img src="image/cover/cover1.jpg" alt="">
+                    <!-- Ab ek span lga rhe hai jisme song ka name hoga or baaki cheje bhi like time. -->
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="4"class="fa songItemPlay fa-play-circle-o"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <!-- Ab hum ek image use kr rhe hai.jo ki song ki cover image hoge. -->
+                    <img src="image/cover/cover1.jpg" alt=""> <!--Hum es src ko ab hta bhi sekte hai kyu ki ab hum js se le rhe hai-->
+                    <!-- Ab ek span lga rhe hai jisme song ka name hoga or baaki cheje bhi like time. -->
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="5"class="fa songItemPlay fa-play-circle-o"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <!-- Ab hum ek image use kr rhe hai.jo ki song ki cover image hoge. -->
+                    <img src="image/cover/cover1.jpg" alt="">
+                    <!-- Ab ek span lga rhe hai jisme song ka name hoga or baaki cheje bhi like time. -->
+                    <span class="songName">Let me Love You</span>
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="6"class="fa songItemPlay fa-play-circle-o"></i></span></span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- or ek or div banyege jiske under hum cover daalege mtlb cover image hogi. -->
+        <div class="songBanner"></div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Ab hum ek or div dege jisme bottom hoga mtlb ki jisme lekha hoga ki konsa song chal rha hai,or bhi bahut kuch krege -->
+    <div class="bottom">
+        <!--ye input jo kra hai neche eske krne se ek line mele hai jisme ye show hoga ki kitna chal rha hai song. -->
+        <input type="range" name="range" id="myProgessBar" min="0" value="0" max="100">
+
+        <!-- Ab icons dege div ki under neche dekhe kaise.jo hum font awesome se lekr aaye hai. -->
+        <div class="icons">
+            <i class="fa fa-step-backward" id="previous"></i> 
+            <i class="fa fa-play-circle-o" id="masterPlay"></i>  <!--Ye id esliye de jise hum eska use kr ki javaScript mein
+                                                                    kuch changes kr paaye.-->
+            <i class="fa fa-step-forward" id="next"></i>
+        </div>
+
+        <!-- Ab hum ek div or bnayege or uske under work krege neche dekhe. -->
+        <div class="songInfo">
+            <img src="image/playing.gif" alt="" id="gif"> <span id="masterSongName">Raba-Salam-e-Ishq</span> 
+        </div>
+    </div>
+
+
+
+    <!-- Humne js ko include kr leya hai mtlb ki JavaScript ko. -->
+    <script src="script.js"></script>
+</body>
+</html>
